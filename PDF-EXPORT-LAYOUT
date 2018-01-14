@@ -1,0 +1,66 @@
+@page
+{
+/*A4-sized pages in portrait orientation are 297 mm wide by 210 mm long*/
+size: 297mm 210mm;
+}
+
+@page
+{
+    @top-center
+    {
+        content: "Document Title Goes Here";
+        font-family: ConfluenceInstalledFont, Helvetica, Arial, sans-serif;
+        font-size: 8pt;
+    }
+    @bottom-center
+    {
+        content: "Page " counter(page);
+        font-family: ConfluenceInstalledFont, Helvetica, Arial, sans-serif;
+        font-size: 8pt;
+    }
+    /* Any other page-specific rules */
+}
+
+$HTML - PDF Layout: Header Section
+
+<div style="margin-top:10mm">
+  <img src="/download/attachments/12346/header-image.png"/>
+</div>
+
+$Adding a Dynamic Title to the Title Page
+
+.fsTitlePage
+{
+position:relative;
+left:0px;
+}
+ 
+/* Turn off the default section numbering for this TOC item */
+.toclvl0:before
+{
+ content: " ";
+ counter-reset: chapter 0;
+}
+ 
+/* Hide the default page numbering for this TOC item */
+.toclvl0 .tocnum
+{
+display: none;
+}
+ 
+/* Move and style this TOC item */
+.toclvl0
+{
+position:absolute;
+top:250px;
+font-size: 42px;
+font-weight: bold;
+margin: 72px 0 4px 0;
+text-align:center;
+}
+
+$Hiding Text from the PDF Output
+.noprint
+{
+display: none ;
+}
