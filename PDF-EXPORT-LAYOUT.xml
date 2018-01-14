@@ -24,7 +24,7 @@ size: 297mm 210mm;
 $HTML - PDF Layout: Header Section
 
 <div style="margin-top:10mm">
-  <img src="/download/attachments/12346/header-image.png"/>
+  <img src="company-logo-url-{/download/attachments/12346/header-image.png}"/>
 </div>
 
 $Adding a Dynamic Title to the Title Page
