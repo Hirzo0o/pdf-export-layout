@@ -1,1 +1,8 @@
+<span id="pageNum"/>
+
+#pageNum:before
+{
+content: counter(page);
+}
+
 Copyright © 2018, ProgressSOft Corporate.
