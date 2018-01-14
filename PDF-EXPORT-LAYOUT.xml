@@ -68,3 +68,25 @@ $Hiding Text from the PDF Output
 {
 display: none ;
 }
+
+$Page Margins
+
+all @ once 
+@page
+{
+size: 210mm 297mm;
+margin: 15mm;
+}
+setting the margins independently:
+
+CSS - PDF STYLESHEET
+@page
+{
+margin-top: 2.54cm;
+margin-bottom: 2.54cm;
+margin-left: 1.27cm;
+margin-right: 1.27cm;
+}
+
+
+
