@@ -21,6 +21,10 @@ size: 297mm 210mm;
     /* Any other page-specific rules */
 }
 
+$FONT-upon-export
+@font-face { src: url(file:///usr/share/fonts/example-font.ttf); -fs-pdf-font-embed: embed; } .code pre, .preformatted pre, tt, kbd, code, samp { font-family: Consolas, monospace; font-size: 9pt; }
+
+
 $HTML - PDF Layout: Header Section
 
 <div style="margin-top:10mm">
