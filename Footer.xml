@@ -1,8 +1,17 @@
+$Page Numbering
 <span id="pageNum"/>
+
+or 
 
 #pageNum:before
 {
 content: counter(page);
+} 
+
+$Wrapping Long Words
+div
+{  
+word-wrap: break-word;  
 }
 
 Copyright © 2018, ProgressSOft Corporate.
